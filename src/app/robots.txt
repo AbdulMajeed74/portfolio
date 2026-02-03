@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-mocha-iota-47.vercel.app/sitemap.xml

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    @apply bg-[#030303] text-white overflow-x-hidden;
+    /* Increased intensity for a more vibrant, high-end look */
+    background-image: radial-gradient(circle at 50% -20%, #1a1a1a 0%, #030303 100%),
+        radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+    /* Added a subtle blue glow */
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-[#050505];
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+}
+
+::selection {
+    @apply bg-white text-black;
+}
